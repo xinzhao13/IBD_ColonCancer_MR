@@ -1,0 +1,47 @@
+# R Package Requirements for IBD-Colon Cancer MR Analysis
+# This file lists all required R packages for the project
+
+# Core Data Processing Packages
+genio
+parallel
+data.table
+dplyr
+tictoc
+tidyverse
+openxlsx
+bit64
+
+# Statistical Analysis Packages
+gtsummary
+gt
+patchwork
+ggplot2
+plotROC
+rcompanion
+imputeMissings
+VennDiagram
+pheatmap
+ROSE
+gsubfn
+randomForest
+gridExtra
+regclass
+car
+oem
+matchmaker
+MendelianRandomization
+Hmisc
+
+# Bioconductor Packages (install via BiocManager)
+snpStats
+sgPLS
+
+# GitHub Packages (install via devtools)
+ieugwasr
+
+# Installation Instructions:
+# 1. Run: Rscript install_packages.R
+# 2. Or install manually:
+#    install.packages(c("genio", "parallel", "data.table", ...))
+#    BiocManager::install(c("snpStats", "sgPLS"))
+#    devtools::install_github("MRCIEU/ieugwasr")

@@ -1,0 +1,48 @@
+# Conda Environment Setup for IBD-Colon Cancer MR Analysis
+# This file creates a conda environment with R and required packages
+
+name: ibd-colon-cancer-mr
+channels:
+  - conda-forge
+  - bioconda
+  - r
+dependencies:
+  # R base
+  - r-base=4.3.0
+  - r-essentials
+  
+  # Core R packages
+  - r-genio
+  - r-dplyr
+  - r-data.table
+  - r-tidyverse
+  - r-ggplot2
+  - r-gtsummary
+  - r-gt
+  - r-patchwork
+  - r-plotroc
+  - r-randomforest
+  - r-caret
+  - r-gridextra
+  - r-venndiagram
+  - r-pheatmap
+  - r-car
+  - r-hmisc
+  
+  # Bioconductor packages
+  - bioconductor-snpstats
+  - bioconductor-sgpls
+  
+  # Additional tools
+  - plink
+  - git
+  
+  # Python packages (if needed for data processing)
+  - python=3.9
+  - pandas
+  - numpy
+
+# Installation Instructions:
+# 1. conda env create -f environment.yml
+# 2. conda activate ibd-colon-cancer-mr
+# 3. Rscript install_packages.R
