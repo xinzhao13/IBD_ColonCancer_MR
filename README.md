@@ -103,12 +103,6 @@ Place the following files in the `data/` directory:
   - `List_field_ids_to_extract.txt`
   - `List_field_ids_to_extract_biomarker.txt`
 
-### File Permissions
-Ensure all job submission scripts are executable:
-```bash
-chmod +x job_scripts/*.sh
-```
-
 ## Installation
 
 ### Clone the repo
