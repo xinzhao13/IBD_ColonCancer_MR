@@ -103,25 +103,6 @@ Place the following files in the `data/` directory:
   - `List_field_ids_to_extract.txt`
   - `List_field_ids_to_extract_biomarker.txt`
 
-### Directory Setup Commands
-```bash
-# Create main project directory
-mkdir TDS_Project
-cd TDS_Project
-
-# Create subdirectories
-mkdir data analysis R_scripts job_scripts
-
-# Move R scripts to R_scripts directory
-mv *.R R_scripts/
-
-# Move job scripts to job_scripts directory
-mv Job_Submission_*.sh job_scripts/
-
-# Set permissions for job scripts
-chmod +x job_scripts/*.sh
-```
-
 ### File Permissions
 Ensure all job submission scripts are executable:
 ```bash
@@ -129,6 +110,11 @@ chmod +x job_scripts/*.sh
 ```
 
 ## Installation
+
+### Clone the repo
+```bash
+git clone git@github.com:xinzhao13/IBD_ColonCancer_MR.git
+```
 
 ### Prerequisites
 - UK Biobank data access
